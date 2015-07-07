@@ -3,11 +3,11 @@ my_file = open("test.txt")
 dict_value = {}
 for line in my_file:
     line = line.strip()
-    my_data = line.split(" ")
+    word_list = line.split(" ")
     
     #print my_data
-    for word in my_data:
-        key = word
+    for word in word_list:
+        # key = word
 
         if word not in dict_value.keys():
             dict_value[word] = 1
