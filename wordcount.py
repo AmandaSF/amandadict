@@ -1,8 +1,8 @@
 
 
-my_file = open("test.txt")
+word_file = open("test.txt")
 dict_value = {}
-for line in my_file:
+for line in word_file:
     line = line.strip()
     word_list = line.split(" ")
     
@@ -17,4 +17,5 @@ for line in my_file:
 
 for tup in dict_value.items():
     print "%s: %d" % (tup[0], tup[1])
+
 
